@@ -19,6 +19,12 @@ app.use(cors())
 //router api
 app.use("/api/v1/", router)
 
+app.get('/', function (req, res) {
+    res.send({
+      message: 'Hello World',
+    });
+  });
+
 //router serving static file
 // app.use('/uploads', express.static('uploads'))
 
